@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: aqua;
+            margin: 0;
+        }
+        .container{
+            height: 600px;
+            width: 400px;
+            border: 2px solid black;
+            background-image: url(https://th.bing.com/th/id/R.661aa707f9bfd1560b007c454e47baa2?rik=i9ZDuKrhqwpJPw&riu=http%3a%2f%2fwww.letuspublish.com%2fwp-content%2fuploads%2f2017%2f04%2fVirat-Kohli-wallpaper.jpg&ehk=OK%2bj%2fC3kB%2bC9VYxLF096xJVBqlOFXWgpEsE7ynIIESY%3d&risl=&pid=ImgRaw&r=0);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+
+        }
+        .header{
+            background-color: lightgreen;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .info{
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .calling{
+            position: absolute;
+            right: 0px;
+        }
+        .call{
+            height:45px ;
+            width: 45px;
+            padding:5px ;
+            border-radius:50% ;
+        }
+        .profile-pic{
+            height:45px ;
+            width:45px ;
+            border-radius:50% ;
+            margin-right:20px ;
+            margin-left: 10px;
+        }
+        .name{
+            font-size: 20px;
+        }
+        .chat{
+            padding: 5px;
+            display: flex;
+            overflow-y: scroll;
+            scrollbar-width:none ;
+            flex-grow: 1;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+        .message{
+            border-radius: 10px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            font-size: 15px;
+            position: relative;
+            max-width: 88%;
+            min-width:48px ;
+
+        }
+        .sent{
+            background-color: red;
+            align-self:flex-end;
+            padding: 10px;
+        }
+        .recieved{
+            background-color: rgba(255, 0, 0, 0.432);
+            align-self: flex-start;
+            padding: 10px;
+        }
+       
+        .text{
+          position: relative;
+            margin-bottom: 20px;
+            display: block;
+             }  
+        .time{
+            font-size: 17px;
+            color: #888;
+            position: absolute;
+            bottom: 1px;
+            right: 8px;
+        }
+        .chattin,.vid{
+            height: fit-content;
+            width: 300px;
+            margin-bottom: 10px;
+        }
+        .date{
+            background-color: lightgreen;
+            width: 50px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 10px;
+            align-self: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="info">
+                <img src="../../virat.jpg" class="profile-pic">
+                <div class="name">Virat</div>
+                <div class="calling">
+                    <img src="../../call.webp" class="call">
+                    <img src="../../phone.png" class="call">
+                </div>
+            </div>
+        </div>
+        <div class="chat">
+            <div class="chat">
+               
+                <span class="date">16 June</span>
+
+                <div class="message sent">
+
+                    <span class="text">hii virat</span>
+                    <span class="time">9:00 pm</span>
+                </div>
+                <div class="message recievsed">
+                    <span class="text">hello</span>
+                </div>
+                
+            </div>
+            <div class="message sent">
+                <span class="text">lunch chesava</span>
+                <span class="time">1:00am</span>
+            </div>
+            <div class="message sent">
+                <span class="sent">exam ki prepare ayyava</span>
+                <span class="time">1:00am</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">ha thinnanu,prepare ayyanu.</span>
+                <span class="time">1:10am</span>
+            </div>
+            
+            <div class="message sent">
+                <span class="text">all the best</span>
+                <span class="time">1:13am</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">Thank you</span>
+                <span class="time">1:13am</span>
+            </div>
+            <span class="date">23 june</span>
+            <div class="message sent">
+                <span class="text">good morning</span>
+                <span class="time">8:00am</span>
+            </div>
+            
+            <div class="message recieved">
+                <span class="text">good morning</span>
+                <span class="time">8:10am</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">tiffin chesava</span>
+                <span class="time">9:00am</span>
+            </div>
+            <div class="message sent">
+                <span class="text">haa thinna nuvvu</span>
+                <span class="time">9:10am</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">Movie ki veldhama ee sunday</span>
+                <span class="time">9:20am</span>
+            </div>
+           
+            <div class="message sent">
+                <span class="text">ha sare veldham</span>
+                <span class="time">2:00am</span>
+            </div>
+            <span class="date">25 june</span>
+            <div class="message recieved">
+                <span class="text">hi</span>
+                <span class="time">9:00am</span>
+            </div>
+            <div class="message sent">
+                <span class="text">what are you doing</span>
+                <span class="time">2:00am</span>
+            </div>
+
+            <div class="message recieved">
+                <span class="text">hi</span>
+                <span class="time">9:00am</span>
+            </div>
+            <div class="message sent">
+                <span class="text">Movie chala bagundhi</span>
+                <span class="time">2:00pm</span>
+            </div>
+            <div class="message sent">
+                <span class="text">college ki velthunnava repu</span>
+                <span class="time">2:00pm</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">ha avunu </span>
+                <span class="time">2:00pm</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">ha velthunna </span>
+                <span class="time">2:00pm</span>
+            </div>
+            <div class="message sent">
+                <span class="text">bye</span>
+                <span class="time">2:00pm</span>
+            </div>
+            <div class="message recieved">
+                <span class="text">bye </span>
+                <span class="time">2:00pm</span>
+            </div>
+
+            <span class="date">today</span>
+            <div class="message recieved">
+                <span class="text">how is today</span>
+                <span class="time">8:00pm</span>
+            </div>
+            <div class="message sent">
+                <span class="text">good </span>
+                <span class="time">8:10pm</span>
+            </div>
+            <div class="message sent">
+                <span class="text">sare bye</span>
+                <span class="time">9:00pm</span>
+            </div>
+            <div class="message recieved">
+                <span class="text"> ha bye</span>
+                <span class="time">9:00pm</span>
+            </div>
+            <div class="message recieved">
+                <span class="text"> good night</span>
+                <span class="time">9:00pm</span>
+            </div>
+            <div class="message sent">
+                <span class="text">good night</span>
+                <span class="time">9:00pm</span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
